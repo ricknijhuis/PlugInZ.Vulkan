@@ -1,0 +1,16 @@
+.{
+    .name = "PlugInZ.Vulkan",
+    .version = "0.0.0",
+    .dependencies = .{
+        .vulkan_headers = .{
+            .url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.296.tar.gz",
+            .hash = "1220d8deff13f2e31607eb0771cb316abc7753f79424aef3edb653a101ec942ce981",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "libs",
+    },
+}

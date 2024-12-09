@@ -1,0 +1,53 @@
+const c = @import("c.zig");
+pub const Allocator = c.VmaAllocator;
+pub const AllocatorCreateInfo = c.VmaAllocatorCreateInfo;
+pub const AllocationCreateInfo = c.VmaAllocationCreateInfo;
+pub const Allocation = c.VmaAllocation;
+pub const AllocationInfo = c.VmaAllocationInfo;
+pub const DefragmentationContext = c.VmaDefragmentationContext;
+pub const DefragmentationStats = c.VmaDefragmentationStats;
+pub const Pool = c.VmaPool;
+pub const PoolCreateInfo = c.VmaPoolCreateInfo;
+pub const VirtualAllocation = c.VmaVirtualAllocation;
+pub const VirtualBlock = c.VmaVirtualBlock;
+pub const VirtualBlockCreateInfo = c.VmaVirtualBlockCreateInfo;
+pub const VirtualAllocationCreateInfo = c.VmaVirtualAllocationCreateInfo;
+pub const VirtualAllocationInfo = c.VmaVirtualAllocationInfo;
+pub const getAllocationInfo = c.vmaGetAllocationInfo;
+pub const createBuffer = c.vmaCreateBuffer;
+pub const destroyBuffer = c.vmaDestroyBuffer;
+pub const mapMemory = c.vmaMapMemory;
+pub const unmapMemory = c.vmaUnmapMemory;
+pub const flushAllocation = c.vmaFlushAllocation;
+pub const invalidateAllocation = c.vmaInvalidateAllocation;
+pub const checkCorruption = c.vmaCheckCorruption;
+pub const setAllocationUserData = c.vmaSetAllocationUserData;
+pub const createPool = c.vmaCreatePool;
+pub const destroyPool = c.vmaDestroyPool;
+pub const findMemoryTypeIndex = c.vmaFindMemoryTypeIndex;
+pub const findMemoryTypeIndexForBufferInfo = c.vmaFindMemoryTypeIndexForBufferInfo;
+pub const findMemoryTypeIndexForImageInfo = c.vmaFindMemoryTypeIndexForImageInfo;
+pub const allocateMemory = c.vmaAllocateMemory;
+pub const allocateMemoryPages = c.vmaAllocateMemoryPages;
+pub const freeMemory = c.vmaFreeMemory;
+pub const freeMemoryPages = c.vmaFreeMemoryPages;
+pub const allocateMemoryForBuffer = c.vmaAllocateMemoryForBuffer;
+pub const allocateMemoryForImage = c.vmaAllocateMemoryForImage;
+pub const buildStatsString = c.vmaBuildStatsString;
+pub const freeStatsString = c.vmaFreeStatsString;
+pub const createVirtualBlock = c.vmaCreateVirtualBlock;
+pub const destroyVirtualBlock = c.vmaDestroyVirtualBlock;
+pub const isVirtualBlockEmpty = c.vmaIsVirtualBlockEmpty;
+pub const clearVirtualBlock = c.vmaClearVirtualBlock;
+pub const virtualAllocate = c.vmaVirtualAllocate;
+pub const virtualFree = c.vmaVirtualFree;
+pub const getVirtualAllocationInfo = c.vmaGetVirtualAllocationInfo;
+pub const createAllocator = c.vmaCreateAllocator;
+pub const destroyAllocator = c.vmaDestroyAllocator;
+pub const createImage = c.vmaCreateImage;
+pub const destroyImage = c.vmaDestroyImage;
+
+// Functions
+test {
+    @import("std").testing.refAllDecls(@This());
+}
